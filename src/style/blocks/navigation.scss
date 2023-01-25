@@ -1,0 +1,11 @@
+.navigation__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.navigation__link {
+    font-size: 16px;
+    text-decoration: none;
+    color: $navlinks;
+}

@@ -1,0 +1,41 @@
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+  
+  html {
+    height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    color: $secondary;
+    text-align: center;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .js-nodisplay {
+    display: none;
+  }
+
+  .js-display {
+    display: block;
+  }

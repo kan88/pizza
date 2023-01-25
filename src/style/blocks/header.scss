@@ -1,0 +1,18 @@
+.header {
+    background-color: $headerbackground;
+}
+
+.header__wrapper {
+    display: flex;
+    max-width: 1202px;
+    margin: 0 auto;
+    padding: 17px 0 16px 0;
+    
+}
+
+.header__link {
+    display: block;
+    width: 159px;
+    height: 69px;
+    margin-right: 249px;
+}
