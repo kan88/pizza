@@ -4,18 +4,20 @@
     padding: 131px 0 159px 0;
     max-width: 1202px;
     margin: 0 auto;
+    justify-content: center;
 }
 
 .intro__content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     max-width: 620px;
 }
 
 .intro__title {
     text-align: left;
     font-size: 45px;
+    line-height: 1.1;
     font-weight: bold;
     color: $introprimary;
     margin: 0;
@@ -24,9 +26,11 @@
 .intro__description {
     text-align: left;
     font-size: 45px;
+    line-height: 1.1;
     font-weight: bold;
     color: $introsecondary;
     margin: 0;
+    margin-bottom: 59px;
 }
 
 .intro__list {
@@ -34,10 +38,42 @@
     flex-wrap: wrap;
     list-style-type: none;
     padding: 0;
+    margin: 0;
 }
 
 .intro__item {
+    position: relative;
+    box-sizing: border-box;
     max-width: 299px;
+    margin-bottom: 47px;
+    margin-right: 10px;
+    padding-left: 77px;
+}
+
+.intro__item:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    top: 10px;
+    left: 0;
+}
+
+.intro__item--best:before {
+    background-image: url('/src/images/intro/1.png');
+}
+
+.intro__item--prof:before {
+    background-image: url('/src/images/intro/2.png');
+}
+
+.intro__item--warranty:before {
+    background-image: url('/src/images/intro/3.png');
+}
+
+.intro__item--receipt:before {
+    background-image: url('/src/images/intro/4.png');
 }
 
 .intro__headline {
@@ -46,23 +82,44 @@
     color: $introsecondary;
     text-align: left;
     text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 5px;
 }
 
 .intro__item-description {
     font-size: 16px;
+    line-height: 1;
     color: $introprimary;
     text-align: left;
+    margin: 0;
 }
 
 .intro__image {
+    display: none;
     width: 520px;
     height: 342px;
 }
 
 .intro__button {
+    width: 226px;
     font-size: 16px;
-    padding: 23px 53px 23px 55px;
+    padding: 23px 0;
     border: none;
     background-color: $buttonsprimary;
     font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.intro__button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+@media(min-width: 550px) {
+    .intro__content {
+        align-items: flex-start;
+    }
+    .intro__image {
+        display: inline-block;
+    }
 }
