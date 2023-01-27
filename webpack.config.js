@@ -10,7 +10,7 @@ const stylesHandler = "style-loader";
 const config = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
+    path: path.resolve(__dirname, "public"),
   },
   devServer: {
     open: true,
@@ -23,6 +23,8 @@ const config = {
     new CopyPlugin({
       patterns: [
         { from: "src/images", to: "images" },
+        { from: "src/fonts", to: "fonts" },
+        
       ],
     }),
 
