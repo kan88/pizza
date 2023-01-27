@@ -25,6 +25,8 @@
     width: 284px;
     padding: 28px 20px 15px 20px;
     margin: 0 auto;
+    margin-bottom: 22px;
+    box-shadow: 0 0 4px 0 $shadow;
 }
 
 .products__item:last-child {

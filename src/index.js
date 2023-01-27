@@ -36,7 +36,7 @@ formOrder.addEventListener('submit', (evt) => {
     })
     .then((response) => response.json())
     .then((json) => console.log(json))
-    .then(() => showMessage('Данные успешно отправлены, ответ в консоле'))
+    .then(() => showMessage('Спасибо за заказ'))
     .catch((err) => showMessage(err))
 })
 
