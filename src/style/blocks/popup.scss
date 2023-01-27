@@ -5,6 +5,7 @@
     bottom: 0;
     right: 0;
     background-color: $opacity;
+    cursor: zoom-out;
 }
 
 .popup__image {
@@ -16,4 +17,5 @@
     margin: auto;
     width: 600px;
     height: 450px;
+    cursor: pointer;
 }
