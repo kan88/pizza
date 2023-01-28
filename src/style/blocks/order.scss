@@ -52,11 +52,14 @@
 }
 
 .order__input {
+    margin-bottom: 22px;
+}
+
+.order__input {
     box-sizing: border-box;
     width: 100%;
     border: 1px solid $placeholder;
     padding: 23px;
-    margin-bottom: 22px;
     cursor: pointer;
 }
 
