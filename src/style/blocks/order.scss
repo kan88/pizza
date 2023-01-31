@@ -67,6 +67,19 @@
     color: $placeholder;
 }
 
+.order__input--number::-webkit-outer-spin-button,
+.order__input--number::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.order__input--number,
+.order__input--number:hover,
+.order__input--number:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+
 .order__submit {
     font-size: 16px;
     font-weight: bold;
